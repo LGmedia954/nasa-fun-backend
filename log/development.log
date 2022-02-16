@@ -440,3 +440,67 @@ Filter chain halted as :authorized rendered or redirected
 Completed 401 Unauthorized in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 273)
 
 
+Started GET "/" for ::1 at 2022-02-16 16:11:17 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lesliegonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lesliegonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.8ms | Allocations: 311)
+Completed 200 OK in 22ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 2412)
+
+
+Started GET "/v1/users" for ::1 at 2022-02-16 16:11:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/v1/users"):
+  
+Started GET "/ws" for ::1 at 2022-02-16 16:12:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/v1/users" for ::1 at 2022-02-16 16:15:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER(?) LIMIT ?[0m  [["username", "sylviawoods"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for ::1 at 2022-02-16 16:16:14 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/lesliegonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/lesliegonzalez/.rvm/gems/ruby-2.6.1/gems/railties-6.1.4.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.9ms | Allocations: 311)
+Completed 200 OK in 19ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2504)
+
+
+Started GET "/api/v1/vocabulary_words" for ::1 at 2022-02-16 16:16:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vocabulary_words"):
+  
+Started GET "/api/v1/users" for ::1 at 2022-02-16 16:16:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/user" for ::1 at 2022-02-16 16:17:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/api/v1/users" for ::1 at 2022-02-16 16:17:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/userscreate" for ::1 at 2022-02-16 16:18:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/userscreate"):
+  
+Started GET "/api/v1/users" for ::1 at 2022-02-16 16:18:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/users/create" for ::1 at 2022-02-16 16:18:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users/create"):
+  
